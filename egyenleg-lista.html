@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-styles/typography.html">
+<link rel="import" href="../paper-material/paper-material.html">
+<link rel="import" href="../paper-datatable/paper-datatable.html">
+<link rel="import" href="../paper-datatable/paper-datatable-card.html">
+
+<!--
+`egyenleg-lista`
+Display transactions in a list view
+
+@demo demo/index.html
+-->
+
+<dom-module id="egyenleg-lista">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'egyenleg-lista',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'egyenleg-lista',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

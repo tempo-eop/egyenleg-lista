@@ -1,0 +1,32 @@
+{
+  "name": "egyenleg-lista",
+  "description": "Display transactions in a list view",
+  "main": "egyenleg-lista.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.5.0",
+    "paper-material": "PolymerElements/paper-material",
+    "paper-datatable": "ardf69/paper-datatable"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "authors": [
+    "Tempo Egészségpénztár - OptiSoft Zrt <optitempo@gmail.com>"
+  ],
+  "keywords": [
+    "tempo",
+    "egeszsegpenztar"
+  ],
+  "license": "BSD",
+  "homepage": "www.egeszsegpenztar.hu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

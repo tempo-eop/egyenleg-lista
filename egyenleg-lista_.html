@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="import" href="../../bower_components/polymer/polymer.html">
+    <link rel="import" href="../../bower_components/paper-styles/typography.html">
+    <link rel="import" href="../../bower_components/paper-material/paper-material.html">
+    <link rel="import" href="../../bower_components/paper-datatable/paper-datatable.html">
+    <link rel="import" href="../../bower_components/paper-datatable/paper-datatable-card.html">
+  </head>
+  <body>
+    <dom-module id="egyenleg-lista">
+      <template>
+        <style>
+		:host {
+			display: block;
+		}
+
+		span {
+			@apply(--paper-font-body1);
+		}
+          
+		paper-material.egyenlegkartya { 
+			@apply(--layout-vertical); 
+			margin:4px;
+			padding: 15px;
+			padding-left: 30px;
+			padding-right: 30px;
+			background: white;
+		}        
+        </style>
+        <paper-material class="egyenlegkartya" elevation="1">
+        <p class="paper-font-subhead" style="font-size: 20px; font-weight: 500; line-height: 28px;">Az Ön pénztári egyenlegén történt változások listája</p>
+		<!--[if !IE]>-->
+		<paper-datatable data="{{egyenlegTomb}}">
+			<paper-datatable-column header="Dátum" property="0" sortable></paper-datatable-column>  
+			<paper-datatable-column header="Jogcím" property="1"></paper-datatable-column>
+			<paper-datatable-column header="Összeg" property="2" sortable></paper-datatable-column>
+			<paper-datatable-column header="Megjegyzés" property="3"></paper-datatable-column>
+		</paper-datatable>
+		<!--<![endif]-->
+        </paper-material>
+    <!--
+        <ul>
+          <template is="dom-repeat" items="{{items}}">
+            <li><span>{{item}}</span></li>
+          </template>
+        </ul>
+    -->
+      </template>
+      <script src="egyenleg-lista.html.0.js"></script>
+    </dom-module>
+  </body>
+</html>
